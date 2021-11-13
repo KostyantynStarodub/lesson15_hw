@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    background-color: rgb(189, 189, 189);
+}
+.header{
+    width: 100%;
+}
+.conteiner{
+    width: 100%;
+    max-width: 1000px;
+}
+.name{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.name h1{
+    font-size: 60px;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+.top{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+.top > ul{
+    display: flex;
+    position: relative;
+}
+.top ul li{
+    display: inline-block;
+    background-color: rgb(95, 95, 95);
+}
+.top > ul > li{
+    border: 1px solid black;
+}
+.top a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    display: block;
+    width: 190px;
+    transition: all 1s;
+}
+.top a:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.top ul ul{
+    display: none;
+    position: absolute;
+}
+.top ul li:hover > ul{
+    display: block;
+}
+.top ul ul li{
+    display: block;
+    width: 190px;
+    position: relative;
+}
+.top ul ul ul li{
+    position: relative;
+    left: 190px;
+    top: -60px;
+}
